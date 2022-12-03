@@ -1,16 +1,13 @@
-package handlers
+package handler
 
 import (
-	"context"
 	"encoding/json"
-	"fmt"
 	"net/http"
-	"strings"
+	//"fmt"
 
 	"github.com/Eli15x/password/src/models"
-	"github.com/Eli15x/password/src/service"
+	//"github.com/Eli15x/password/src/service"
 	"github.com/gin-gonic/gin"
-	"github.com/labstack/gommon/log"
 )
 
 
@@ -29,10 +26,10 @@ func VerifyPassword(c *gin.Context) {
 		return
 	}
 
-	if PasswordSetting.Rules == "" {
+	if PasswordSetting.Rules == nil {
 		c.String(http.StatusBadRequest, "not rules Passed")
 		return
 	}
 
-	c.JSON(http.StatusOK, result)
+	c.JSON(http.StatusOK,  "")
 }

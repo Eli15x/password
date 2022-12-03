@@ -3,22 +3,12 @@ package main
 import (
 	//"time"
 	//"context"
-
-	"context"
-	"fmt"
-	"time"
-
-	"github.com/Eli15x/SagwaBooks-Back/src/client"
-	"github.com/Eli15x/SagwaBooks-Back/src/handlers"
-	"github.com/bugsnag/bugsnag-go"
+	"github.com/Eli15x/password/src/handler"
 	"github.com/gin-contrib/cors"
 	"github.com/gin-gonic/gin"
 )
 
 func main() {
-
-	ctx, cancel := context.WithTimeout(context.Background(), 10*time.Second)
-	defer cancel()
 
 	router := gin.Default()
 
@@ -30,7 +20,7 @@ func main() {
 
 	router.Use(cors.New(config))
 
-	router.POST("/verify", handlers.VerifyPassword)
+	router.POST("/verify", handler.VerifyPassword)
 
 	router.Run(":1323")
 }
