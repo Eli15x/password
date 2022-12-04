@@ -4,7 +4,6 @@ import (
 	"context"
 	"encoding/json"
 	"net/http"
-	//"fmt"
 
 	"github.com/Eli15x/password/src/models"
 	"github.com/Eli15x/password/src/service"
@@ -88,7 +87,6 @@ func VerifyPassword(c *gin.Context) {
 		"verify": verify,
 		"noMatch": noMatch,
 	}
-	//for and redirect to function service.
 
 	c.JSON(http.StatusOK,  result)
 }

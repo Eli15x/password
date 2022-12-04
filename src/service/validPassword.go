@@ -6,13 +6,6 @@ import (
 	"fmt"
 	"sync"
 	"unicode"
-	//"strings"
-	//"time"
-
-	//"github.com/Eli15x/password/src/models"
-	//"github.com/fatih/structs"
-	//"github.com/labstack/gommon/log"
-	//"go.mongodb.org/mongo-driver/bson"
 )
 
 var (
