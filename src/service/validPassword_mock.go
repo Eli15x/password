@@ -2,7 +2,6 @@ package service
 
 import (
 	"context"
-	
 	testifyMock "github.com/stretchr/testify/mock"
 )
 

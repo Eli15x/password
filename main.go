@@ -1,8 +1,6 @@
 package main
 
 import (
-	//"time"
-	//"context"
 	"github.com/Eli15x/password/src/handler"
 	"github.com/gin-contrib/cors"
 	"github.com/gin-gonic/gin"
